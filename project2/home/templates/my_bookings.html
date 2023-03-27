@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}
+my booking
+{% endblock %}
+
+{% block content %}
+<h1>My Bookings</h1>
+{% if bookings %}
+  <ul>
+    {% for booking in bookings %}
+      <li>{{ booking.id }} - {{ booking.start_date }} to {{ booking.end_date }}</li>
+{% endfor %}
+  </ul>
+{% else %}
+  <p>No bookings found.</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+
+
+
+{% block title %}
+booking
+{% endblock %}
+
+{% block content %}
+<style>
+  .img1{
+    position: relative;
+    bottom: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+    .img1{
+     display: none;
+
+    }
+    .form1{
+      width: 100%;
+    }
+  }
+</style>
+
+<h1 class="text-center pt-4">Make an Appointment</h1>
+
+<div class="container w-50 my-5 form ">
+  <div class="row">
+    <div class="col-sm-6 form1">
+      <form  action="" method="post">
+        {% csrf_token %}
+          <div class="form-group">
+            {% bootstrap_form form %}
+          </div> <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          
+        </form>
+
+    </div>
+    <div class="col-sm-6">
+      <img class="img1" src="{% static '/images/mobail.png' %}" width="500px" alt="">
+    </div>
+  </div>
+    
+ 
+
+</div>
+
+{% endblock %}

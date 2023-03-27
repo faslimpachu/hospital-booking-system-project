@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+  about page
+{% endblock %} 
+
+{% load static %}
+
+{% block content %}
+
+<div class="container" style="width: fit-content; background-color: #444849; ">
+  <h1 class="text-center mt-4 about-us">About Us</h1>
+ <p class="text-center p-txt" >Welcome to our hospital booking website! Our team is dedicated to providing you with convenient and efficient healthcare services. We understand that booking appointments and waiting in long queues can be frustrating and time-consuming, which is why we created this website to make the process easier for you.</p>
+
+
+</div>
+ 
+ <style>
+  .txt1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  span{
+      font-size:50px;
+      font-weight: bold;
+  }
+  .p-txt{
+    padding: 10px;
+    color: white;
+
+  }
+  .about-us{
+    font-weight: bold;
+    color: rgb(116, 230, 173);
+    padding: 10px;
+  }
+  @media only screen and (max-width: 760px){
+    .img1{
+      position: relative;
+      top: 260px;
+      left: 10%;
+      width: 80%;
+    }
+    .txt3{
+      position: relative;
+      bottom: 180px;
+      
+    }
+    .txt2{
+     margin-top: 15px;
+    }
+    .img2{
+      position: relative;
+      left: 10%;
+      width: 80%;
+      
+
+    }
+    .img3{
+      position: relative;
+      top: 270px;
+      left: 10%;
+      width: 80%;
+
+    }
+    .txt4{
+      position: relative;
+      bottom: 210px;
+    }
+    .our{
+      font-size: 40px;
+    }
+    .our1{
+      font-size: 30px;
+      
+    }
+    .txt5{
+      margin-top: 20px;
+    }
+    .img5{
+      position: relative;
+      left: 10%;
+      width: 80%;
+
+    }
+   
+    
+  
+    
+  }
+  
+
+
+
+
+</style>
+
+
+ <section id="about-us">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+            <img class="img1" src="{% static '/images/rocket.png' %}" width="70%" alt="">
+                  
+          </div>
+          <div class="col-md-6 txt1">
+              
+              <p class="txt3" > <span >Our Mission</span> <br>
+                  We are dedicated to providing the highest quality
+                  healthcare services to our patients. Our mission is
+                  to ensure that every patient receives the
+                  personalized care and attention they need to achieve
+                  optimal health outcomes.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 txt1">
+              
+              <p class="txt2"><span>Our Team</span><br> Our team is made up of highly skilled and experienced
+                  healthcare professionals who are passionate about
+                  providing the best possible care to our patients. We
+                  work together to ensure that every patient receives
+                  comprehensive and coordinated care.</p>
+
+          </div>
+          <div class="col-md-6">
+            <img class="img2" src="{% static '/images/Team page-bro.png' %}" width="70%" alt="">
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+            <img class="img3" src="{% static '/images/Cardiologist-bro.png' %}" width="70%" alt="">
+              
+          </div>
+          <div class="col-md-6 txt1">
+              
+              <p class="txt4"><span class="our">Our Facilities</span><br> We have state-of-the-art facilities equipped with the
+                  latest technology and equipment to provide our
+                  patients with the best possible care. Our facilities
+                  are designed to be comfortable and welcoming to
+                  ensure that our patients feel at ease during their
+                  visits.</p>
+
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 txt1"> 
+              <p class="txt5"><span class="our1">Our Commitment</span><br> At our hospital, we are committed to providing
+                  exceptional healthcare services to our patients. We
+                  are dedicated to continuously improving our services
+                  and facilities to ensure that our patients receive
+                  the best possible care.</p>       
+          </div>
+          <div class="col-md-6">
+            <img class="img5" src="{% static '/images/Medicine-bro.png' %}" width="70%" alt="">
+          </div>
+      </div>
+
+
+
+
+
+          
+  </div>
+</section>
+
+{% endblock %} 
